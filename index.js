@@ -16,7 +16,7 @@ function driverNamesWithRevenueOver(drvs,revenue){
 
 function exactMatch(drvs, exObj){
   return drvs.filter(function (drv){
-    for(const att of exObj){
+    for(const att in exObj){
       if (drv[att]!==exObj[att]){
         return false;
       } else {
