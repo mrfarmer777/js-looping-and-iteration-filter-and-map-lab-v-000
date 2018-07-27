@@ -14,3 +14,13 @@ function driverNamesWithRevenueOver(drvs,revenue){
 }
 
 
+function exactMatch(drvs, exObj){
+  return drvs.filter(function (drv){
+    for(const att of exObj){
+      if (drv[att]!==exObj[att]){
+        return false;
+      } else {
+        return true;
+      }
+  }});
+}
