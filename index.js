@@ -24,3 +24,11 @@ function exactMatch(drvs, exObj){
       }
   }});
 }
+
+
+function exactMatchToList(drvs,exObj){
+  return exactMatch(drvs,exObj).map(function (drv){
+    return drv.name;
+  });
+  
+}
